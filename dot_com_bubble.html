@@ -10,6 +10,99 @@
             border-bottom: 3px solid #000;
             padding-bottom: 0.5px;
         }
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        body {
+            background: #f9f9f9;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif
+        }
+
+        .container {
+            margin-top: 10px
+        }
+
+        .title {
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 10px
+        }
+
+        .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden
+        }
+
+        .content .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s
+        }
+
+        .content:hover .content-overlay {
+            opacity: 1
+        }
+
+        .content-image {
+            width: 100%
+        }
+
+        img {
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s
+        }
+
+        .content:hover .content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1
+        }
+
+        .content-details h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase
+        }
+
+        .content-details p {
+            color: #fff;
+            font-size: 0.8em
+        }
+
+        .fadeIn-bottom {
+            top: 80%
+        }
     </style>
 </head>
 <body>
@@ -65,12 +158,56 @@
             potential the internet had in changing the way people saw commerce. However, the two were different in that
             Bezos was more business inclined and Omidyar was more technologically inclined. Although they were different
             in mindset, they were both successful in part because customers would quickly use these e-commerce sites.</p>
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6">
+                         <div class="content">
+                                 <div class="content-overlay"></div> <img class="content-image" src="./images/Bezos2.jpg"
+                                    width="500" height="400">
+                                 <div class="content-details fadeIn-bottom">
+                                     <h3 class="content-title">Jeff Bezos</h3>
+                                     <p class="content-text"><i class="fa fa-map-marker"></i>Founder and CEO of Amazon</p>
+                                 </div>
+                             </div>
+                     </div>
+                     <div class="col-md-6">
+                         <div class="content">
+                                 <div class="content-overlay"></div> <img class="content-image" src="./images/Omidyar2.jpg"
+                                    width="500" height="400">
+                                 <div class="content-details fadeIn-bottom">
+                                     <h3 class="content-title">Pierre Omidyar</h3>
+                                     <p class="content-text"><i class="fa fa-map-marker"></i>Founder of eBay</p>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+             </div>
+        <br>
         <h3>Innovations in Technology</h3>
         <p>The internet boom would get a massive boost with the innovation of the silicon chip. Silicon chips would have
             a major part in the growth of the internet, as Moore’s Law, where the number of transistors on a microchip
             doubles every year, would change computers forever. With Metcalf’s Law, where every node in the network would
             increase the networks value dramatically. In other words, the internet gathers momentum as more and more users
             join the network. This would only be more prevalent as technology would become faster and cheaper.</p>
+
+            <div class="container">
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="content">
+                                 <div class="content-overlay"></div> <img class="content-image" src="./images/Silicon_chip.jpg"
+                                    width="500" height="400">
+                                 <div class="content-details fadeIn-bottom">
+                                     <h3 class="content-title">Silicon Chip</h3>
+                                     <p class="content-text"><i class="fa fa-map-marker"></i>Revolutionized and was instrumental for the
+                                     growth and usage of computer technology</p>
+                                 </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        <br>
+
+
         <h3>The Internet Bubble Grows...and Pops</h3>
         <p>This huge growth would lead to a growth of an internet bubble. Amazon would soon be a pioneer in the internet
             boom, and would use the words “Get Big Fast” as words to live by. With the growth of e-commerce came worries
@@ -86,6 +223,22 @@
             spending went into creating this network. On April 14th, 2000, the internet economy would crash, and be
             known as “Black Friday”. The Nasdaq would drop 355 points and fell 25%, which would be the biggest collapse
             of the stock market to that point. </p>
+            <div class="container">
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="content">
+                                 <div class="content-overlay"></div> <img class="content-image" src="./images/dot_com_bubble.jpg"
+                                    width="500" height="400">
+                                 <div class="content-details fadeIn-bottom">
+                                     <h3 class="content-title">Nasdaq Crash</h3>
+                                     <p class="content-text"><i class="fa fa-map-marker"></i>aka "Black Friday", the dot com bubble
+                                     finally pops</p>
+                                 </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        <br>
         <h3>Rising From the Ashes</h3>
         <p>Even with the pop of the internet bubble, this led to a fundamentally different way of thinking in terms of
             communications, technology, and e-commerce. Amazon and eBay showed that empowering normal people is the
