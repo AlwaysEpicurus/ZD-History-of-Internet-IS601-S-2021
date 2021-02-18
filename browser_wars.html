@@ -10,6 +10,99 @@
             border-bottom: 3px solid #000;
             padding-bottom: 0.5px;
         }
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        body {
+            background: #f9f9f9;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif
+        }
+
+        .container {
+            margin-top: 10px
+        }
+
+        .title {
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 10px
+        }
+
+        .content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden
+        }
+
+        .content .content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s
+        }
+
+        .content:hover .content-overlay {
+            opacity: 1
+        }
+
+        .content-image {
+            width: 100%
+        }
+
+        img {
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s
+        }
+
+        .content:hover .content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1
+        }
+
+        .content-details h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase
+        }
+
+        .content-details p {
+            color: #fff;
+            font-size: 0.8em
+        }
+
+        .fadeIn-bottom {
+            top: 80%
+        }
     </style>
 </head>
 <body>
@@ -63,11 +156,61 @@
             interested in being a part of a beta effort. From this announcement, 12 people responded and were sent the
             first browser. This initial group would grow rapidly as news of Mosaic Online would spread, reaching
             millions of people within a short timeline. </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Andreessen.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Marc Andreessen</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Would go on to create Mosaic, with help from some college friends</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Mosaic.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Mosaic</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>First graphical web browser</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       <br>
         <h3>Netscape comes to being</h3>
             <p>News of Mosaic Online would quickly reach Jim Clark, a Stanford professor and Co-Founder of Netscape.
             Clark would approach Andreessen for a business partnership to continue on the success of Mosaic Online, and
             the duo would soon gather a group of engineers to create Netscape. The creation of Netscape would become
             worrisome for major tech companies, including Microsoft.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Clark.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Jim Clark</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Stanford professor and Co-Founder of Netscape</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Netscape.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Netscape</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Netscape would go on to create Navigator, the first internet web browser. It would change how people use the internet forever</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       <br>
         <h3>A Threat to Microsoft</h3>
             <p>Bill Gates, founder and CEO of Microsoft at the time, saw Netscape as a threat to their technological
             supremacy, since by 1993, about 90% of the world’s PCs were running Microsoft software, and Netscape were
@@ -77,6 +220,21 @@
             the internet landscape would change forever, as more and more people would use these web browsers in their
             daily lives. Navigator would soon challenge Microsoft’s software platform supremacy, and force Gates to
             rethink the impact the web would have on daily life, and forced Microsoft engineers to fight back.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Gates.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Bill Gates</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Founder and CEO of Microsoft, would do everything in his power to destroy Netscape</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       <br>
         <h3>The Browser Wars Begin</h3>
             <p> Knowing Microsoft would soon be coming after them, Netscape would hire Gary Reback, an anti-trust lawyer, to
             represent them in the event Microsoft would do anything illegal. After receiving threats from Microsoft,
@@ -88,11 +246,42 @@
             manufacturers would ship only Internet Explorer, and prevent installing anything but Internet Explorer. By
             September of 1997, Netscape would lose the browser wars, but Windows would face another threat: the U.S.
             government. </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Reback.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Gary Reback</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Famous anti-trust lawyer</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       <br>
         <h3>Anti-Trust Problems</h3>
             <p>Gates would face a massive anti-trust lawsuit, being accused of forcing consumers to use
             Internet Explorer, and no other web browser. After a lengthy trial, and almost having Microsoft being split
             into two, Gates would pass over the CEO position to Steve Ballmer. However, the impact of these browser wars
             would later bring on other companies, such as Google.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                                <div class="content-overlay"></div> <img class="content-image" src="./images/Anti_trust_Microsoft.jpg"
+                                   width="500" height="400">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Anti-Trust Lawsuit - Microsoft</h3>
+                                    <p class="content-text"><i class="fa fa-map-marker"></i>Gates would find himself in a lengthy anti-trust lawsuit over how Microsoft handled their
+                                    business with Netscape. After Microsoft was almost split into two, Gates would give up his CEO position to Steve Ballmer</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       <br>
             </div>
     </div>
 <!-- Optional JavaScript -->
